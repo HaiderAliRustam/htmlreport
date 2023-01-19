@@ -1,0 +1,8 @@
+{
+  "username_Loc": "input[placeholder='Username']",
+  "password_Loc": "input[placeholder='Password']",
+  "submit_Loc":    "button[type='submit']",
+  "userdata"  :     "Admin",
+  "passdata"  :     "admin123" 
+}
+
