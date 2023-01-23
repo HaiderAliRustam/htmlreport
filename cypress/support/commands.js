@@ -14,6 +14,8 @@ Cypress.Commands.add('clickbutton', (avc) => {
     cy.get(avc).click()
 
  })
+ 
+  
 //
 //
 // -- This is a child command --
@@ -30,3 +32,9 @@ Cypress.Commands.add('clickbutton', (avc) => {
 //require('cypress-xpath');
 import 'cypress-file-upload';
 import 'cypress-mochawesome-reporter/register';
+Cypress.Commands.add('stopRecording', () => {
+    cy.window().then((win) => {
+      win.videoRecording.stop();
+    });
+  });
+  

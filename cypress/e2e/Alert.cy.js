@@ -1,4 +1,9 @@
 describe("Alert Test Suit Test", ()=>{
+    
+ 
+    const stopRecording = new  stopRecording;
+    cy.stopRecording()
+
     it("Alert Test Case ",()=>{
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
         cy.get("#alertbtn").click()

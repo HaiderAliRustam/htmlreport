@@ -75,26 +75,27 @@ describe("API Scries Test Suit", ()=>{
             // cy.log(rep.body.data.first_name)
              const dummyName = rep.body.data[5].first_name
             cy.log(dummyName)
-           // return dummyName
+            return dummyName
 
         })
-    //        .then((dummyName)=>
-    //        {
-    //           cy.log("This Name is Gererated from the First Api" + dummyName)
-    //           cy.request({
-    //             method: "POST",
-    //             url : "https://reqres.in/api/register",
-    //             body : {
+           .then((dummyName)=>
+           {
+            //  cy.log("This Name is Gererated from the First Api" + dummyName)
+              cy.request
+              ({
+                method: "POST",
+                url : "https://reqres.in/api/register",
+                body : {
                     
-    //                     "name": dummyName,
-    //                     "job": "leader"
+                        "name": dummyName,
+                        "job": "leader"
                     
-    //             }
-    //         }).then((reps)=>
-    //         {
-    //             cy.log(reps)
-    //         })
-    //     })
+                }
+            }).then((reps)=>
+            {
+                cy.log(reps)
+            })
+        })
      })
 
 })

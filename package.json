@@ -3,17 +3,39 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "scripts": 
+  {
+    
+    "test": "C:\\Users\\2017c\\Documents\\Barely_Tec\\node_modules\\.bin\\cypress run",
+
+    "cypress:open" : "cypress open"
   },
   "author": "ha5600045@gmail.com",
   "license": "ISC",
-  "dependencies": {
+  "dependencies":
+  {
     "cypress": "^12.3.0"
   },
-  "devDependencies": {
+  
+  "devDependencies": 
+  {
     "@cypress/xpath": "^2.0.3",
     "cypress-file-upload": "^5.0.8",
     "cypress-mochawesome-reporter": "^3.2.3"
+  },
+   "reporter": "mochawesome",
+   "reporterOptions": 
+   {
+    "reportDir": "cypress/reports",
+    "overwrite": false,
+    "html": true,
+    
+    
+    
+    
+    "json": false
   }
+  
+  
 }
+
