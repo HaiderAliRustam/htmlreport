@@ -17,8 +17,14 @@ class Loginpage {
         .should("have.text", "Dashboard")
     }
 
-    abc(){
+    
 
-    }
+
+     selectRandomDate() {
+        const randomTimestamp = new Date(new Date().getTime() - Math.floor(Math.random() * 1000000000000));
+        const randomDate = new Date(randomTimestamp).toISOString().slice(0,10);
+        cy.get('#rand_options_date1').clear().type(randomDate);
+      }
+      
 }
 export default Loginpage
