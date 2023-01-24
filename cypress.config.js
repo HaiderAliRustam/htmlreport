@@ -1,5 +1,18 @@
 const { defineConfig } = require("cypress");
 
+const cypressMultiReporters = require('cypress-multi-reporters');
+
+module.exports = (on, config) => {
+  on('before:browser:launch', (browser = {}, args) => {
+    if (browser.name === 'chrome') {
+      args.push('--disable-gpu');
+      return args;
+    }
+  });
+  cypressMultiReporters.installPlugin(on, config);
+};
+
+
 module.exports = defineConfig({
   reporter: "cypress-mochawesome-reporter",
   video: false,
