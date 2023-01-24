@@ -19,6 +19,7 @@ describe("Dropdown Function Suot",()=>{
         cy.get('[type="checkbox"]').uncheck(["option2", "option1"]).should("not.be.checked")
 
         cy.get(".radioButton").check("radio2").should("be.checked")
+        //i
     })
     it.only("",()=>{
         cy.visit("https://www.facebook.com/")
