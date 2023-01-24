@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 0,
     "failures": 1,
-    "start": "2023-01-23T11:32:52.403Z",
-    "end": "2023-01-23T11:32:53.466Z",
-    "duration": 1063,
+    "start": "2023-01-24T04:14:21.572Z",
+    "end": "2023-01-24T04:14:22.823Z",
+    "duration": 1251,
     "testsRegistered": 1,
     "passPercent": 0,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7c48a7c5-7a8d-4c08-a2fd-060e4d523378",
+      "uuid": "2ba6e193-9375-4521-abde-f10a703244da",
       "title": "",
       "fullFile": "cypress\\e2e\\API.cy.js",
       "file": "cypress\\e2e\\API.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7a3a1da3-396d-4a79-b966-ec371262aaf6",
+          "uuid": "d29cf594-bc1a-4d0c-9705-8c4ca998577a",
           "title": "API Scries Test Suit",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Multiple API",
               "fullTitle": "API Scries Test Suit Multiple API",
               "timedOut": null,
-              "duration": 1048,
+              "duration": 1216,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -51,8 +51,8 @@
                 "estack": "TypeError: The \"path\" argument must be of type string. Received type boolean (false)\nTypeError [ERR_INVALID_ARG_TYPE]: The \"path\" argument must be of type string. Received type boolean (false)\n    at new NodeError (node:internal/errors:372:5)\n    at validateString (node:internal/validators:120:11)\n    at Object.join (node:path:429:7)\n    at B (<embedded>:4494:295206)\n    at <embedded>:4494:297086\n    at Object.save (<embedded>:4494:297107)\n    at <embedded>:4494:298265\n    at tryCatcher (C:\\Users\\2017c\\AppData\\Local\\Cypress\\Cache\\12.3.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (C:\\Users\\2017c\\AppData\\Local\\Cypress\\Cache\\12.3.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (C:\\Users\\2017c\\AppData\\Local\\Cypress\\Cache\\12.3.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (C:\\Users\\2017c\\AppData\\Local\\Cypress\\Cache\\12.3.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (C:\\Users\\2017c\\AppData\\Local\\Cypress\\Cache\\12.3.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\promise.js:694:18)\n    at _drainQueueStep (C:\\Users\\2017c\\AppData\\Local\\Cypress\\Cache\\12.3.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\async.js:138:12)\n    at _drainQueue (C:\\Users\\2017c\\AppData\\Local\\Cypress\\Cache\\12.3.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\async.js:131:9)\n    at Async._drainQueues (C:\\Users\\2017c\\AppData\\Local\\Cypress\\Cache\\12.3.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\async.js:147:5)\n    at Immediate._onImmediate (C:\\Users\\2017c\\AppData\\Local\\Cypress\\Cache\\12.3.0\\Cypress\\resources\\app\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at process.processImmediate (node:internal/timers:466:21)",
                 "diff": null
               },
-              "uuid": "5d852782-bc31-45a8-9dfa-8d2dd5d671d2",
-              "parentUUID": "7a3a1da3-396d-4a79-b966-ec371262aaf6",
+              "uuid": "b1660370-8fc7-4c7b-81fa-05cde089353b",
+              "parentUUID": "d29cf594-bc1a-4d0c-9705-8c4ca998577a",
               "isHook": false,
               "skipped": false
             }
@@ -60,11 +60,11 @@
           "suites": [],
           "passes": [],
           "failures": [
-            "5d852782-bc31-45a8-9dfa-8d2dd5d671d2"
+            "b1660370-8fc7-4c7b-81fa-05cde089353b"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 1048,
+          "duration": 1216,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
