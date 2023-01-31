@@ -16,7 +16,7 @@ module.exports = (on, config) => {
 module.exports = defineConfig({
   reporter: "cypress-mochawesome-reporter",
   video: false,
-  screenshotsFolder: false,
+  
 
   reporterOptions: {
     charts: true,
