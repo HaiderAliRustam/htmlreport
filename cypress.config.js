@@ -21,6 +21,7 @@ module.exports = defineConfig({
   reporterOptions: {
     charts: true,
     reportPageTitle: "Haider-Report",
+    reportFilename: "haider",
     embeddedScreenshots: true,
     inlineAssets: true,
     showPassed: false,

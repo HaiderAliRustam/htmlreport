@@ -48,7 +48,8 @@ class Loginpage {
       RendumOption(){
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
 
-        cy.get('#dropdown-class-example').then(($select) => {
+        cy.get('#dropdown-class-example').then(($select) => 
+        {
             const optionsLength = $select.find('option').length;
             const randomIndex = Math.floor(Math.random() * optionsLength);
             cy.get('#dropdown-class-example').select($select.find('option').eq(randomIndex).val());
